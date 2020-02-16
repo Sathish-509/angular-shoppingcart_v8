@@ -12,6 +12,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { OutputGraphComponent } from './output-graph/output-graph.component';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
+    OutputGraphComponent,
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
