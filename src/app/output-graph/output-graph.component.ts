@@ -63,6 +63,7 @@ export class OutputGraphComponent implements OnInit {
 
   ngOnInit(){
     // Set 10 seconds interval to update data again and again
+     Highcharts.chart('container', this.options);
     const source = interval(10000);
 
     // Sample API

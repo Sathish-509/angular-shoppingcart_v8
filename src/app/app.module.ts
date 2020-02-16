@@ -13,6 +13,10 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { OutputGraphComponent } from './output-graph/output-graph.component';
+import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { PhotoService } from './photo.service';
+import { HomePageComponent } from './home-page/home-page.component';
+import { RandomSlideshowPageComponent } from './random-slideshow-page/random-slideshow-page.component';
 
 @NgModule({
   imports: [
@@ -35,9 +39,12 @@ import { OutputGraphComponent } from './output-graph/output-graph.component';
     CartComponent,
     ShippingComponent,
     OutputGraphComponent,
+    ImageGalleryComponent,
+    HomePageComponent,
+    RandomSlideshowPageComponent,
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService]
+  providers: [CartService, PhotoService]
 })
 export class AppModule { }
 
